@@ -1,0 +1,30 @@
+name: Sync README to index.html
+
+on:
+  push:
+    paths:
+      - "README.md"
+
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Convert README.md to index.html
+      run: |
+        echo "<!DOCTYPE html>" > index.html
+        echo "<html lang=\"en\">" >> index.html
+        echo "<head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Your CV</title></head>" >> index.html
+        echo "<body>" >> index.html
+        cat README.md >> index.html
+        echo "</body></html>" >> index.html
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add index.html
+        git commit -m "Update index.html from README.md"
+        git push
