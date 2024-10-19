@@ -43,7 +43,6 @@ Mohamed **Elmekawy**
 
 * **Cumulative GPA:** 3.42/4.0 
 
-* **Military Status:** Final exemption. 
 
 ## **| Projects** 
 
@@ -75,9 +74,9 @@ Mohamed **Elmekawy**
 
 **Courses**:
 
-		By **Synopsys**: Design compiler- ICC compiler II \- Primetime- IC Compiler II SoC Design Planning.
+		**Synopsys**: Design compiler- ICC compiler II \- Primetime- IC Compiler II SoC Design Planning.
 
-		By **Cadence**: Genus- Innovus.
+		**Cadence**: Genus- Innovus.
 
 		**Coursera**: Hardware security provided by University of Maryland.
 
