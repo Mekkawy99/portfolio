@@ -18,8 +18,16 @@ jobs:
     - name: Install pandoc
       run: sudo apt-get install pandoc
 
-    - name: Convert README.md to index.html
-      run: pandoc README.md -o index.html
+    - name: Convert README.md to index.html with styling
+      run: |
+        pandoc README.md -o index.html
+        echo "<style>" >> index.html
+        echo "body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; line-height: 1.6; }" >> index.html
+        echo "h1, h2, h3 { color: #333; }" >> index.html
+        echo "p { margin-bottom: 20px; }" >> index.html
+        echo "ul, ol { margin-left: 20px; }" >> index.html
+        echo "strong { font-weight: bold; }" >> index.html
+        echo "</style>" >> index.html
 
     - name: Commit and push changes
       run: |
