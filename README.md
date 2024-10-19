@@ -73,7 +73,8 @@ Mohamed **Elmekawy**
 **Analog IC design track** training provided by Silicon Vision Company, in partnership with Synopsys Inc.
 
 **Courses**:
-		**Synopsys**: Design compiler- ICC compiler II \- Primetime- IC Compiler II SoC Design Planning.
+		
+  		**Synopsys**: Design compiler- ICC compiler II \- Primetime- IC Compiler II SoC Design Planning.
 		**Cadence**: Genus- Innovus.
 		**Coursera**: Hardware security provided by University of Maryland.
 		**Edx**: Introduction to RISC-V.
